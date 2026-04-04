@@ -66,11 +66,8 @@ function Contact() {
             <a href="https://github.com/prasadraj26" target="_blank" rel="noopener noreferrer" className="social-link">
               <i className="fa-brands fa-github"></i>
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://www.linkedin.com/in/prasadraj-v-500277394" target="_blank" rel="noopener noreferrer" className="social-link">
               <i className="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="social-link">
-              <i className="fa-brands fa-twitter"></i>
             </a>
             <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="social-link">
               <i className="fa-brands fa-instagram"></i>

@@ -1,0 +1,133 @@
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  position: relative;
+}
+
+.home-content {
+  animation: fadeInUp 1s ease;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #000000;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #19384c;
+  margin-bottom: 1rem;
+}
+
+.home-description {
+  font-size: 1rem;
+  color: #000000;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background: #34495e;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+  
+  .profile-photo {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    padding-top: 70px;
+    min-height: auto;
+    padding-bottom: 60px;
+  }
+  
+  .home-title {
+    font-size: 2rem;
+  }
+  
+  .home-subtitle {
+    font-size: 1rem;
+  }
+  
+  .home-description {
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
+  
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .btn-primary {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 1.8rem;
+  }
+  
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .home-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .home-description {
+    font-size: 0.85rem;
+  }
+}

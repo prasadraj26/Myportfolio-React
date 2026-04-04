@@ -1,5 +1,62 @@
-/* About.css */
-.about {
-  padding: 2rem;
-  background-color: #fff;
+.about-section {
+  background: #ffffff;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: #000000;
+}
+
+.about-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.info-item {
+  color: #333333;
+}
+
+.info-item strong {
+  color: #3498db;
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .about-info {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+  
+  .info-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text p {
+    font-size: 0.9rem;
+  }
+  
+  .info-item {
+    font-size: 0.85rem;
+  }
 }

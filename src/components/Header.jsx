@@ -13,22 +13,26 @@ function Header() {
   };
 
   return (
-    <header>
-      <div className="logo">
-        <span className="logo-icon"><i className="fas fa-user"></i></span>
-        PORTFOLIO
-      </div>
-      <button className="menu-toggle" aria-label="Toggle navigation" onClick={toggleMenu}>
-        <i className="fas fa-bars"></i>
-      </button>
-      <nav className={`main-nav ${isMenuOpen ? 'active' : ''}`}>
-        <a href="#about" onClick={closeMenu}>About</a>
-        <a href="#skills" onClick={closeMenu}>Skills</a>
-        <a href="#experience" onClick={closeMenu}>Experience</a>
-        <a href="#projects" onClick={closeMenu}>Projects</a>
-        <a href="#education" onClick={closeMenu}>Education</a>
-        <a href="#contact" onClick={closeMenu}>Contact</a>
-        <a href="https://github.com/prasadraj26" target="_blank" rel="noopener noreferrer" className="github-btn">Github</a>
+    <header className="header">
+      <nav className="navbar">
+        <div className="nav-container">
+          <div className="logo">
+            <h2>Portfolio</h2>
+          </div>
+          <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+            <li><a href="#home" className="nav-link" onClick={closeMenu}>Home</a></li>
+            <li><a href="#about" className="nav-link" onClick={closeMenu}>About</a></li>
+            <li><a href="#education" className="nav-link" onClick={closeMenu}>Education</a></li>
+            <li><a href="#skills" className="nav-link" onClick={closeMenu}>Skills</a></li>
+            <li><a href="#projects" className="nav-link" onClick={closeMenu}>Projects</a></li>
+            <li><a href="#contact" className="nav-link" onClick={closeMenu}>Contact</a></li>
+          </ul>
+          <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </nav>
     </header>
   );

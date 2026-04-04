@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import Header from './components/Header.jsx';
-import Hero from './components/Hero.jsx';
-import Skills from './components/Skills.jsx';
-import Experience from './components/Experience.jsx';
-import Projects from './components/Projects.jsx';
+import Home from './components/Home.jsx';
+import About from './components/About.jsx';
 import Education from './components/Education.jsx';
+import Skills from './components/Skills.jsx';
+import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
-import NeuralBackground from './components/NeuralBackground.jsx';
+import ParticlesBackground from './components/ParticlesBackground.jsx';
 import './styles/App.css';
 
 function App() {
@@ -30,19 +30,17 @@ function App() {
 
   return (
     <div className="App">
-      <NeuralBackground />
-      <div className="container">
-        <Header />
-        <main>
-          <Hero />
-          <Skills />
-          <Experience />
-          <Projects />
-          <Education />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
+      <ParticlesBackground />
+      <Header />
+      <main>
+        <Home />
+        <About />
+        <Education />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }

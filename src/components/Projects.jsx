@@ -4,52 +4,61 @@ import '../styles/Projects.css';
 function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-featured e-commerce website with cart functionality and payment integration",
-      tech: ["React", "Redux", "Node.js", "MongoDB"],
+      title: "Bulkers Manufacturer Website",
+      year: "2025",
+      description: "Developed a dynamic company website featuring service listings and business information. Integrated a backend-supported Request a Quote module to collect, store, and manage customer inquiries efficiently.",
+      tech: ["React", "Node.js", "MongoDB", "Express"],
       link: "#",
-      github: "https://github.com/prasadraj26"
+      github: "https://github.com/yourusername/industrial-website"
     },
     {
-      title: "Portfolio Website",
-      description: "Modern and responsive portfolio website with animated background",
-      tech: ["React", "CSS3", "Framer Motion"],
+      title: "Parkinson's Disease Prediction",
+      year: "2024",
+      description: "Developed a machine learning model to predict Parkinson's disease using handwriting data. Achieved 85% classification accuracy using supervised learning techniques.",
+      tech: ["Python", "Scikit-learn", "Pandas", "NumPy"],
       link: "#",
-      github: "https://github.com/prasadraj26"
+      github: "https://github.com/yourusername/parkinsons-prediction"
     },
     {
-      title: "Task Management App",
-      description: "Productivity app for managing tasks and projects with real-time updates",
-      tech: ["React", "Firebase", "Material-UI"],
+      title: "Hospital Management Website",
+      year: "2024",
+      description: "Designed and developed a web-based application to streamline hospital operations. Implemented separate user logins with well-defined authentication, structured routing, and improved user experience.",
+      tech: ["React", "Node.js", "MySQL", "JWT"],
       link: "#",
-      github: "https://github.com/prasadraj26"
+      github: "https://github.com/yourusername/hospital-management"
     }
   ];
   
   return (
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Here are some of my recent projects</p>
-      <div className="projects-grid">
-        {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="project-tech">
-              {project.tech.map((tech, i) => (
-                <span key={i} className="tech-badge">{tech}</span>
-              ))}
+    <section id="projects" className="projects-section">
+      <div className="container">
+        <h2 className="section-title">Projects</h2>
+        <p className="section-subtitle">Here are some of my recent projects</p>
+        
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <div key={index} className="project-card">
+              <div className="project-header">
+                <h3>{project.title}</h3>
+                <span className="project-year">{project.year}</span>
+              </div>
+              <p className="project-description">{project.description}</p>
+              <div className="project-tech">
+                {project.tech.map((tech, i) => (
+                  <span key={i} className="tech-badge">{tech}</span>
+                ))}
+              </div>
+              <div className="project-links">
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                  <i className="fa-brands fa-github"></i> Code
+                </a>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                  <i className="fa-solid fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
             </div>
-            <div className="project-links">
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-                <i className="fa-brands fa-github"></i> Code
-              </a>
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                <i className="fa-solid fa-external-link-alt"></i> Live Demo
-              </a>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
