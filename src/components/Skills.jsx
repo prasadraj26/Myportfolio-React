@@ -14,7 +14,7 @@ function Skills() {
     { name: 'Node.js', icon: 'fa-brands fa-node-js', color: '#339933' },
     { name: 'Firebase', icon: 'fa-solid fa-fire', color: '#FFCA28' },
     { name: 'MongoDB', icon: 'fa-solid fa-database', color: '#47A248' },
-    { name: 'Vercel', icon: 'fa-solid fa-cloud', color: '#000000' }
+    { name: 'Netlify', icon: 'fa-solid fa-cloud', color: '#000000' }
   ];
 
   const uiSkills = [

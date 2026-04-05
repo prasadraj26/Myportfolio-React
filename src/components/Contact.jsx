@@ -19,37 +19,37 @@ function Contact() {
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  setLoading(true);
-  setStatus('');
+    setLoading(true);
+    setStatus('');
 
-  try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbwd4viQbSMBsgsS0nIuXGYbXWhKUNmOCZf9GW7oszC74jE8X5Fih7y5efd0yCMWp0pdoA/exec", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(formData)
-    });
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbyOFm-MpSYgX4JWny2w-yA_BLogygOI1Iwj8edN1pZhX6p-YUf7wSZ4fqfdoiZt36tOBQ/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(formData)
+        }
+      );
 
-    const result = await response.json();
+      const result = await response.json();
 
-    if (result.status === "success") {
-      setStatus("success");
-      setFormData({ name: "", email: "", message: "" });
-    } else {
+      if (result.status === "success") {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
       setStatus("error");
     }
 
-  } catch (error) {
-    setStatus("error");
-  }
+    setLoading(false);
+  };
 
-  setLoading(false);
-};
   return (
-    <section id="contact">
+    <section id="contact" className="contact-section">
       <div className="contact-content">
 
         {/* LEFT SIDE */}
@@ -78,22 +78,9 @@ function Contact() {
             </div>
           </div>
 
-          <div className="social-links">
-            <a href="https://github.com/prasadraj26" target="_blank" rel="noopener noreferrer" className="social-link">
-              <i className="fa-brands fa-github"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/prasadraj-v-500277394" target="_blank" rel="noopener noreferrer" className="social-link">
-              <i className="fa-brands fa-linkedin-in"></i>
-            </a>
-
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="social-link">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-          </div>
         </div>
 
-        {/* RIGHT SIDE FORM */}
+        {/* RIGHT SIDE */}
         <div className="contact-form">
           <form onSubmit={handleSubmit}>
 
