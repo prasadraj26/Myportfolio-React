@@ -30,8 +30,8 @@ function Header() {
             <li className="mobile-socials">
               <div className="header-socials">
                 <a href="https://github.com/prasadraj26"><i className="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/prasadraj-v-500277394"><i className="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/prasadraj-v-500277394?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i className="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/prasad__v_?igsh=YzJ3dzUwcWhveG51"><i className="fa-brands fa-instagram"></i></a>
               </div>
             </li>
           </ul>
@@ -39,8 +39,8 @@ function Header() {
           {/* DESKTOP SOCIALS */}
           <div className="header-socials desktop-socials">
             <a href="https://github.com/prasadraj26"><i className="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/prasadraj-v-500277394"><i className="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i className="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/prasadraj-v-500277394?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i className="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/prasad__v_?igsh=YzJ3dzUwcWhveG51"><i className="fa-brands fa-instagram"></i></a>
           </div>
 
           {/* HAMBURGER */}

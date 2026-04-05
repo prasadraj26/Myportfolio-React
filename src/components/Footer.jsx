@@ -20,10 +20,10 @@ function Footer() {
             <a href="https://github.com/prasadraj26" target="_blank" rel="noopener noreferrer" className="social-icon">
               <i className="fa-brands fa-github"></i>
             </a>
-            <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.linkedin.com/in/prasadraj-v-500277394?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="social-icon">
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.instagram.com/prasad__v_?igsh=YzJ3dzUwcWhveG51/" target="_blank" rel="noopener noreferrer" className="social-icon">
               <i className="fa-brands fa-instagram"></i>
             </a>
           </div>
