@@ -8,8 +8,8 @@ function Projects() {
       year: "2025",
       description: "Developed a dynamic company website featuring service listings and business information. Integrated a backend-supported Request a Quote module to collect, store, and manage customer inquiries efficiently.",
       tech: ["React", "Node.js", "MongoDB", "Express"],
-      link: "#",
-      github: "https://github.com/yourusername/industrial-website"
+      link: "https://sr-bulkers-preview.netlify.app/",
+      github: "https://github.com/prasadraj26/SR-Bulkers-Website"
     },
     {
       title: "Parkinson's Disease Prediction",
