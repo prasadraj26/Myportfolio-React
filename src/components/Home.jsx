@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Home.css';
 import profile from '../assets/images/pp photo.jpeg';
+import resume from '../assets/resume.pdf';
 
 function Home() {
   return (
@@ -24,9 +25,14 @@ function Home() {
             Dedicated and passionate student with a keen interest in technology and professional skills.
           </p>
 
-          <a href="#contact" className="btn-primary">
-            Get In Touch
-          </a>
+          <div className="button-group">
+            <a href="#contact" className="btn-primary">
+              Get In Touch
+            </a>
+            <a href={resume} className="btn-resume" target="_blank" rel="noopener noreferrer">
+              <i className="fas fa-download"></i> Resume
+            </a>
+          </div>
 
         </div>
       </div>

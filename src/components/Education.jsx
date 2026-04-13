@@ -15,7 +15,7 @@ function Education() {
             <h4 className="education-institution">Kongu Engineering College</h4>
             <p className="education-field">Artificial Intelligence & Data Science</p>
             <p className="education-description">
-              Pursuing degree with focus on software development and data AI technologies.
+              Pursuing degree with focus on software development and AI technologies.
             </p>
           </div>
 
