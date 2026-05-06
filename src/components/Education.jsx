@@ -22,7 +22,7 @@ function Education() {
           {/* Education 2 */}
           <div className="education-item">
             <div className="education-year">2022 - 2023</div>
-            <h3 className="education-degree">Higher Secondary Education</h3>
+            <h3 className="education-degree">Senior Secondary Education</h3>
             <h4 className="education-institution">ST MARY'S MATRIC HIGHER SECONDARY SCHOOL</h4>
             <p className="education-field">Computer Science</p>
             <p className="education-description">
@@ -30,16 +30,7 @@ function Education() {
             </p>
           </div>
 
-          {/* Education 3 */}
-          <div className="education-item">
-            <div className="education-year">2020 - 2021</div>
-            <h3 className="education-degree">Secondary School Education</h3>
-            <h4 className="education-institution">ST MARY'S MATRIC HIGHER SECONDARY SCHOOL</h4>
-            <p className="education-field">General Studies</p>
-            <p className="education-description">
-              Completed secondary education with 76% marks.
-            </p>
-          </div>
+          
         </div>
       </div>
     </section>
