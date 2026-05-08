@@ -40,45 +40,47 @@ function Skills() {
               <i className="fas fa-code"></i> Technical Skills:
             </h3>
             
-            <div className="skill-category">
-              <h4 className="category-title">
-                <i className="fas fa-laptop-code"></i> Frontend:
-              </h4>
-              <div className="skills-icons-grid">
-                {frontendSkills.map((skill, index) => (
-                  <div key={index} className="skill-icon-card">
-                    <i className={skill.icon} style={{ color: skill.color }}></i>
-                    <span>{skill.name}</span>
-                  </div>
-                ))}
+            <div className="skills-categories">
+              <div className="skill-category">
+                <h4 className="category-title">
+                  <i className="fas fa-laptop-code"></i> Frontend:
+                </h4>
+                <div className="skills-icons-grid">
+                  {frontendSkills.map((skill, index) => (
+                    <div key={index} className="skill-icon-card">
+                      <i className={skill.icon} style={{ color: skill.color }}></i>
+                      <span>{skill.name}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            <div className="skill-category">
-              <h4 className="category-title">
-                <i className="fas fa-server"></i> Backend:
-              </h4>
-              <div className="skills-icons-grid">
-                {backendSkills.map((skill, index) => (
-                  <div key={index} className="skill-icon-card">
-                    <i className={skill.icon} style={{ color: skill.color }}></i>
-                    <span>{skill.name}</span>
-                  </div>
-                ))}
+              <div className="skill-category">
+                <h4 className="category-title">
+                  <i className="fas fa-server"></i> Backend:
+                </h4>
+                <div className="skills-icons-grid">
+                  {backendSkills.map((skill, index) => (
+                    <div key={index} className="skill-icon-card">
+                      <i className={skill.icon} style={{ color: skill.color }}></i>
+                      <span>{skill.name}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            <div className="skill-category">
-              <h4 className="category-title">
-                <i className="fas fa-paint-brush"></i> UI Tools:
-              </h4>
-              <div className="skills-icons-grid">
-                {uiSkills.map((skill, index) => (
-                  <div key={index} className="skill-icon-card">
-                    <i className={skill.icon} style={{ color: skill.color }}></i>
-                    <span>{skill.name}</span>
-                  </div>
-                ))}
+              <div className="skill-category">
+                <h4 className="category-title">
+                  <i className="fas fa-paint-brush"></i> UI Tools:
+                </h4>
+                <div className="skills-icons-grid">
+                  {uiSkills.map((skill, index) => (
+                    <div key={index} className="skill-icon-card">
+                      <i className={skill.icon} style={{ color: skill.color }}></i>
+                      <span>{skill.name}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -89,7 +91,7 @@ function Skills() {
               <i className="fas fa-users"></i> Soft Skills:
             </h3>
             
-            <div className="skill-category">
+            <div className="soft-skills-wrapper">
               <div className="soft-skills-tags">
                 {softSkills.map((skill, index) => (
                   <span key={index} className="skill-tag">{skill}</span>
